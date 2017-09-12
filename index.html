@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+   <link rel="stylesheet" href="css/toggle-switch.css">
+   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+   <link rel="stylesheet" href="css/main.css">
+   <title>Dashboard</title>
+</head>
+<body>
+  <header>
+    <h2><b>Your</b>App&trade;</h2>
+    <div id="right">
+    <img id="bell" src="icons/icon-bell.svg" alt="Bell Icon">
+    <img id="jeriah" src="jeriah.jpg" alt="Jeriah Golf"  width="50" height="50">
+      <h4>Jeriah Bowers</h4>
+    </div>
+</header>
+ <nav>
+   <ul>
+   <li><img src="icons/icon-dashboard.svg" alt="Dashboard Icon" width="25"><p>Dashboard</p></li>
+   <li><img src="icons/icon-members.svg" alt="Dashboard Icon" width="25"><p>Members</p></li>
+     <li><img src="icons/icon-visits.svg" alt="Dashboard Icon" width="25"><p>Visits</p></li>
+   <li><img src="icons/icon-settings.svg" alt="Dashboard Icon" width="25"><p>Settings</p></li>
+  </ul>
+ </nav>
+<div id="bodyy">
+  <div id="searchDash">
+    <h1 id="dashboard">Dashboard</h1>  
+    <input type="search" placeholder="Search">
+  </div>
+<div id="alert"><p><b>Alert</b> May the force be with us all!!</p><img src="images/x.jpg" alt="Exit Button" width="20"></div>
+ <div id="canvasDiv">
+     <div id="lineDiv">
+        <div id="flexOpt">
+         <h3>Traffic</h3>
+           <ul>
+             <li>Hourly</li>
+             <li>Daily</li>
+             <li>Weekly</li>
+             <li>Monthly</li>
+          </ul>
+        </div>
+         <canvas id="lineChart" height="150" width="300"></canvas>
+      </div> <!--End Line Chart Div-->
+     
+         
+    <div id="doubleDiv">
+     <div id="barChart"> 
+      <h3>Daily Traffic</h3>
+         <canvas id="bar" height="150" width="250"></canvas>
+        </div>
+       <div id="doughnutChart">
+         <h3>Mobile Users</h3>
+         <canvas id="doughnut" height="150" width="250"></canvas>
+       </div>
+     </div> <!--End Double Div-->
+ </div> <!--End Canvas Div--> 
+
+<h1>Social Stats</h1>
+ <div id="socialDiv">
+    <div class="socials" id="twitterDiv">
+        <div class="circle"><img class="icons" src="icons/icon-twitter.svg" alt="Twitter Icon"></div> <!--Circle Div End-->
+        <div class="right"><h3>Twitter</h3>
+        <h2>8, 765</h2></div>
+    </div>
+    
+    <div class="socials" id="facebookDiv">
+        <div class="circle" id="facebook"><img class="icons" src="icons/icon-facebook.svg" alt="Facebook Icon"></div>
+        <div class="right"><h3>Facebook</h3>
+        <h2>10, 345</h2></div>
+    </div>
+    
+    <div class="socials" id="googleDiv">
+        <div class="circle"><img class="icons" src="icons/icon-google-plus.svg" alt="Google Plus Icon"></div>
+        <div class="right"><h3>Google+</h3>
+        <h2>2, 530</h2></div>
+    </div>
+ </div> <!--End Social Outer Div-->    
+
+<div id="members">
+ <div id="newMembers">
+  <h1>New Members</h1>
+   <ul>
+      <li><img class="images" src="images/justus.jpg" alt="Guy holding Golf Club"><div class="why"><div class="nameEmail"><h3>Justus Harless</h3><a href="#"><p>justusharless@yahoo.com</p></a></div><span class="date">9/3/2017</span></div></li>
+    <li><img class="images" src="images/basketball.jpg" alt="Guy Holding Basketball"><div class="why"><div class="nameEmail"><h3>Jake Dehlomme</h3><a href="#"><p>jakedehlomme@yahoo.com</p></a></div><span class="date">9/2/2017</span></div></li>
+      <li><img class="images" src="images/golf.jpg" alt="Guy Swinging Club"><div class="why"><div class="nameEmail"><h3>Steve Smith</h3><a href="#"><p>stevesmith@yahoo.com</p></a></div><span class="date">8/29/2017</span></div></li>
+      <li><img class="images" src="images/class.jpg" alt="Guys with Swag"><div class="why"><div class="nameEmail"><h3>Jeshuah Bowers</h3><a href="#"><p>jeshuahbowers03@yahoo.com</p></a></div><span class="date">8/8/2017</span></div></li>
+  </ul>
+</div>
+
+<div id="recentActivity">
+ <h1>Recent Activity</h1>
+  <ul>
+   <li><img class="images" src="images/justus.jpg" alt="Guy holding Golf Club"><div class="stacked"><p>Justus Harless commented on your Facebook post.</p><span>2 Hours Ago</span></div></li>
+   <li><img class="images" src="images/basketball.jpg" alt="Guy Holding Basketball"><div class="stacked"><p>Jake Dehlomme started following you on Twitter.</p><span>5 Hours Ago</span></div></li>
+   <li><img class="images" src="images/golf.jpg" alt="Guy Swinging Club"><div class="stacked"><p>Steve Smith recently watched your video on Youtube.</p><span>9 Hours Ago</span></div></li>
+   <li><img class="images" src="images/class.jpg" alt="Guys with Swag"><div class="stacked"><p>Jeshuah Bowers is your slave.</p><span>1 Day Ago</span></div></li>
+  </ul>
+ </div>
+</div> <!--membersDiv End-->
+<div id="settingsMessage">
+  <div id="message">
+     <h1>Message User</h1>
+     <input type="text" placeholder="Search for User">
+     <textarea placeholder="Message for User"></textarea>
+     <button type="submit">Send</button>
+  </div> <!--Message Div-Styles--> 
+    <div id="settings"> 
+<div id="toggleDiv">
+   <h1>Settings</h1>
+  <label class="switch-light switch-ios" onclick="">
+  <input type="checkbox">
+
+  <strong>
+    Send Email Notifications
+  </strong>
+
+  <span>
+    <span>Off</span>
+    <span>On</span>
+    <a></a>
+  </span>
+ </label>
+
+ <label class="switch-light switch-ios" onclick="">
+  <input type="checkbox">
+
+  <strong>
+    Set Profile to Public
+  </strong>
+
+  <span>
+    <span>Off</span>
+    <span>On</span>
+    <a></a>
+  </span>
+ </label>
+</div> <!--End Toggle Div-->
+  <select>
+      <option>Select Timezone</option>
+      <option>Eastern Standard Time(EST)</option>
+      <option>Central Standard Time(CST)</option>
+      <option>Mountain Standard Time(MST)</option>
+      <option>Pacific Standard Time(PST)</option>
+  </select>
+<div id="buttons">
+ <button id="save" type="submit">Save</button>
+ <button id="cancel" type="submit">Cancel</button>
+</div> <!--Button Div-->
+    </div> <!--Settings Div-->
+</div> <!--Outer Div-->   
+    </div> <!--#bodyy Div-->
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.bundle.js"></script>
+<script src="js/chart.js"></script>
+<script src="js/main.js"></script>
+  </body>
+</html>

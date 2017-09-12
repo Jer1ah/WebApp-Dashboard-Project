@@ -1,0 +1,534 @@
+/*Main-Styles*/
+
+html {
+    height: 100%;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    margin: 0;
+    background-color: #fdfcfd;
+    font-family: 'Open Sans', sans-serif;
+    height: 100%;
+}
+
+a {
+   text-decoration: none;
+}
+
+input {
+    height: 20px;
+}
+
+h1 {
+  font-size: 1.3em;
+  color: grey;
+  margin-left: 1.5em;
+}
+
+h3 {
+   font-size: 1.2em;
+   color: grey;
+}
+
+/*Header-Styles*/
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: #635889;
+    justify-content: space-between;
+}
+
+header h2 {
+    font-weight: normal;
+    margin-left: 10px;
+    color: white;
+}
+
+header h4 {
+    margin-right: 10px;
+    color: white;
+}
+
+#jeriah {
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+#bell {
+    height: 40px;
+    width: 40px;
+    margin-right: 15px;
+    padding-right: 10px;
+    border-right: 2px solid #644ca4;
+    width: 30px;
+}
+
+#right {
+    display: flex;
+    align-items: center;
+}
+
+/*Chart-Styles*/
+
+#canvasDiv {
+   display: flex;
+   flex-direction: column;
+   width: 95%;
+   margin: auto;
+}
+
+canvas {
+    max-width: 95%;
+    margin: auto;
+}
+
+/*Icon-Styles*/
+
+.icons {
+    width: 40px;
+    margin-right: 1em;
+}
+
+
+.right {
+    margin-left: 1em;
+}
+
+
+/*SearchBar-Styles*/
+
+#searchDash {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e7e4e7;
+    height: 50px;
+}
+
+#dashboard {
+    background-color: white;
+    color: #a6a6a6;
+    padding: 11px 12px 11px 12px;
+    font-size: 1.3em;
+    margin-left: 0;
+} 
+
+input {
+    margin-right: 12px;
+    display: block;
+    width: 35%;
+}
+
+/*Chart.js-Styles*/
+
+#flexOpt {
+    display: flex;
+    justify-content: space-between;
+}
+
+#flexOpt h3 {
+    margin-left: 10px;
+}
+
+#flexOpt ul {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+#flexOpt li {
+   margin-right: 8px;
+   padding: 8px 10px;
+   border-radius: 20px;
+   color: grey;
+}
+
+#flexOpt li:hover {
+    background-color: #88cc00;
+    color: white;
+    cursor: pointer;
+}
+
+/*Social Div-Styles*/
+
+#socialDiv {
+   display: flex;
+   flex-direction: column;
+}
+
+
+.socials {
+    background-color: #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1em;
+    border: 1px #d9d9d9 solid;
+    border-radius: 3px;
+    width: 95%;
+    margin: auto;
+    margin-bottom: .8em;
+}
+
+.circle {
+    background-color: #635889;
+    border-radius: 50%;
+    height: 75px;
+    width: 75px;
+    display: flex;
+}
+
+.circle img {
+    margin-left: 1.2em;
+    margin-top: .5em;
+}
+
+#facebook img {
+   margin-bottom: .6em; 
+}
+
+/*Person Data-Styles*/
+
+.images {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+#newMembers ul {
+    display: flex;
+    flex-direction: column;
+}
+
+#newMembers li {
+    display: flex;
+    align-items: center;
+}
+
+.nameEmail {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1em;
+}
+
+.nameEmail h3 {
+    margin-bottom: 2px;
+}
+
+.nameEmail p {
+    margin-top: 2px;
+}
+
+.why {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+}
+
+#recentActivity {
+    display: flex;
+    flex-direction: column;
+}
+
+#recentActivity li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.2em;
+}
+
+.stacked {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1em;
+}
+
+.stacked span {
+    margin-top: -10px;
+}
+
+
+/*Settings/Message Div-Styles*/
+
+#message {
+    display: flex;
+    flex-direction: column;
+}
+
+#message input, button, textarea {
+    margin: auto;
+    margin-bottom: .8em;
+    border-radius: 5px;
+    border: 1px #d9d9d9 solid;
+    width: 90%;
+    height: 3em;
+    font-size: .9em;
+    background-color: #f2f2f2;
+}
+
+#message button {
+    color: white;
+    background-color: #635889;
+}
+
+#message textarea {
+    height: 7em;
+}
+
+#settings {
+    display: flex;
+    flex-direction: column;
+}
+
+#settings select {
+    width: 90%;
+    margin-bottom: .8em;
+    height: 3em;
+}
+
+select {
+    align-self: center;
+}
+
+.switch-light span {
+    max-width: 20%;
+    float: right;
+}
+
+#toggleDiv {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 1.3em;
+}
+
+label {
+    display: inline;
+}
+
+#toggleDiv label {
+   margin-bottom: 1em;
+   
+}
+
+/*Settings Button-Styles*/
+
+#buttons {
+    display: flex;
+    width: 100%%;
+}
+
+#buttons button {
+    width: 40%;
+    color: white;
+}
+
+#cancel {
+    background-color: #a6a6a6;
+}
+
+#save {
+    background-color: #635889;
+}
+
+/*Popup Div-Styles*/
+
+#alert {
+    width: 90%;
+    margin: auto;
+    background-color: #635889;
+    color: white;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#alert b {
+    font-size: 18px;
+}
+
+#alert p {
+    display: inline-block;
+    margin-left: 10px; 
+}
+
+#alert img {
+    float: right;
+    margin-top: 19px;
+    margin-right: 7px;
+}
+
+#alert img:hover {
+    cursor: pointer;
+}
+
+nav {
+    width: 95%;
+    margin: auto;
+    margin-top: 6px;
+}
+
+nav ul {
+    margin: auto;
+}
+
+
+nav li {
+    text-align: center;
+    background-color: #453e60;
+    border-radius: 5px;
+    color: white;
+    margin-right: 25px
+}
+
+nav img {
+    margin-top: 2px;
+}
+
+
+/*BreakPoints*/
+
+@media (min-width: 768px) {
+    nav {
+        display: flex;
+        background-color: #453e60;
+        width: 100%;
+        margin-top: 0;
+        justify-content: space-around;
+    }
+    
+    nav ul {
+        display: flex;
+    }
+    
+    nav li {
+        width: 10em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0;
+    }
+    
+    nav li:hover {
+        border-bottom: #88cc00 3px solid;
+        cursor: pointer;
+    }
+    
+    nav p {
+        margin-left: 5px;
+    }
+    
+    #members {
+        display: flex;
+    }
+    
+    #recentActivity, #newMembers {
+        flex: 2;
+    }
+}
+
+@media (min-width: 1024px) {
+    #bodyy {
+        width: 95%;
+        float: right;
+        height: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 0;
+    }
+    
+    html {
+        height: 2090px;
+    }
+    
+    nav {
+        flex-direction: column;
+        width: 5%;
+        float: left;
+        background-color: #453e60;
+        justify-content: flex-start;
+        height: 100%;
+    }
+    
+    nav li {
+        width: 50%;
+        margin: 30px auto 0;
+        margin-left: -17px;
+    }
+    
+    nav li:hover {
+        cursor: pointer;
+        border-bottom: none;;
+    }
+    
+    nav p {
+        display: none;
+    }
+    
+    #fullHeight {
+        height: 100%;
+    }
+    
+    #socialDiv {
+        flex-direction: row;
+        flex: 1;
+        width: 90%;
+        margin: auto;
+        padding: 20px ;
+    }
+    
+    .socials {
+        margin: 0 5px;
+    }
+    
+    #settingsMessage, #settings {
+        display: flex;
+    }
+    
+    #doubleDiv {
+      display: flex;  
+    }
+    
+    #message, #settings {
+        flex: 1;
+    }
+
+    
+    #barChart, #doughnutChart {
+        flex: 1;
+    }
+
+    
+    
+    #doubleDiv canvas {
+       min-height: 400px; 
+    }
+    
+    #lineChart {
+        max-height: 450px;
+    }
+    
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
