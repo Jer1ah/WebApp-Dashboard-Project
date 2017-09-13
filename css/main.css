@@ -320,7 +320,7 @@ label {
 
 #buttons {
     display: flex;
-    width: 100%%;
+    width: 100%;
 }
 
 #buttons button {
@@ -513,22 +513,7 @@ nav img {
     #lineChart {
         max-height: 450px;
     }
+}
     
 
     
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
